@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "fdb1dd33-5b21-4170-8464-f45e2c3e9b44",
+		"name": "Practica3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26664668"
+	},
+	"item": [
+		{
+			"name": "GetProfile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5065/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5065",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProfile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"profileId\": 1,\r\n    \"name\": \"Marcelo\",\r\n    \"lastname\": \"Cespedes\",\r\n    \"email\": \"marcelo.cespedes@alumnos.ucn.cl\",\r\n    \"city\": \"Antofagasta\",\r\n    \"country\": \"Chile\",\r\n    \"summary\": \"Un joven estudiante dedicado a su familia y amigos con sueños de crecer como persona y profesional.\",\r\n    \"instagram\": \"https://www.instagram.com/\",\r\n    \"facebook\": \"https://www.facebook.com/\",\r\n    \"age\": 23,\r\n    \"imageUrl\": \"https://images.mubicdn.net/images/cast_member/2552/cache-207-1524922850/image-w856.jpg?size=800x\",\r\n    \"frameworks\": [\r\n        {\r\n            \"frameworkId\": 1,\r\n            \"name\": \"React\",\r\n            \"level\": \"Moderado\",\r\n            \"year\": 2022,\r\n            \"quantity\": 50,\r\n            \"profileId\": 1\r\n        },\r\n        {\r\n            \"frameworkId\": 2,\r\n            \"name\": \"HTML\",\r\n            \"level\": \"Alto\",\r\n            \"year\": 2020,\r\n            \"quantity\": 80,\r\n            \"profileId\": 1\r\n        },\r\n        {\r\n            \"frameworkId\": 3,\r\n            \"name\": \"CSS\",\r\n            \"level\": \"Bajo\",\r\n            \"year\": 2022,\r\n            \"quantity\": 20,\r\n            \"profileId\": 1\r\n        }\r\n    ],\r\n    \"hobbies\": [\r\n        {\r\n            \"hobbyId\": 1,\r\n            \"name\": \"Jugar videojuegos\",\r\n            \"description\": \"Jugar porque fomenta la creatividad, la sociabilidad y el desarrollo cognitivo.\",\r\n            \"profileId\": 1\r\n        },\r\n        {\r\n            \"hobbyId\": 2,\r\n            \"name\": \"Cantar\",\r\n            \"description\": \"Cantar ya que puede aliviar el estrés, mejorar el estado de ánimo y fortalecer las habilidades comunicativas.\",\r\n            \"profileId\": 1\r\n        },\r\n        {\r\n            \"hobbyId\": 3,\r\n            \"name\": \"Bailar\",\r\n            \"description\": \"Bailar porque combina actividad física con expresión artística, promoviendo la salud y el bienestar emocional.\",\r\n            \"profileId\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5065/api/profile/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5065",
+					"path": [
+						"api",
+						"profile",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
